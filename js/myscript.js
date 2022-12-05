@@ -62,12 +62,10 @@ for (i=0; i<teamMembers.length; i++){
     let profileImage = document.createElement('img');
     profileImage.setAttribute('src', './img/'+teamMembers[i].img);
     infos.classList.add('d-flex', 'flex-column', 'infos', 'p-2')
-    infos.append(profileImage, nameMember, memberPosition);
     nameMember.append(teamMembers[i].name);
     memberPosition.append(teamMembers[i].position);
-    
+    infos.append(profileImage, nameMember, memberPosition);
     infoContainer.append(infos);
-
 }
 
 
