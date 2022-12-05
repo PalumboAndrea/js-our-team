@@ -55,13 +55,12 @@ const teamMembers = [
 
 let infoContainer = document.getElementById('info-container');
 
-let infos = document.createElement('div');
-
 for (i=0; i<teamMembers.length; i++){
-    let info = teamMembers[i].name + teamMembers[i].position + teamMembers[i].img;
-    infos.append(teamMembers[i].name);
-    infos.append(teamMembers[i].position);
+    let infos = document.createElement('div');
+    infos.append(teamMembers[i].name + ' - ');
+    infos.append(teamMembers[i].position + ' - ');
     infos.append(teamMembers[i].img);
+    infoContainer.append(infos);
 
 }
 
