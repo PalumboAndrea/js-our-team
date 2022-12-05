@@ -1,7 +1,5 @@
-.card-custom{
-  background-color: aqua;
-  height: 300px;
-  border-radius: 20px;
-  width: calc(100% / 3 - 10px);
-  margin: 5px;
+
+.infos{
+  width: calc(100% / 3);
 }
+

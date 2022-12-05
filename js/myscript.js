@@ -57,9 +57,15 @@ let infoContainer = document.getElementById('info-container');
 
 for (i=0; i<teamMembers.length; i++){
     let infos = document.createElement('div');
-    infos.append(teamMembers[i].name + ' - ');
-    infos.append(teamMembers[i].position + ' - ');
-    infos.append(teamMembers[i].img);
+    let nameMember = document.createElement('div');
+    let memberPosition = document.createElement('div');
+    let profileImage = document.createElement('img');
+    profileImage.setAttribute('src', './img/'+teamMembers[i].img);
+    infos.classList.add('d-flex', 'flex-column', 'infos', 'p-2')
+    infos.append(profileImage, nameMember, memberPosition);
+    nameMember.append(teamMembers[i].name);
+    memberPosition.append(teamMembers[i].position);
+    
     infoContainer.append(infos);
 
 }
